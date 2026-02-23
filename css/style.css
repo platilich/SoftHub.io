@@ -1,210 +1,207 @@
 body {
-    background-color: #011826;
-    
-    font-family: "Courier New", Courier, monospace;
-    
-    color: #03A696;
-
-
     display: flex;
     flex-direction: column;
 
-    margin: 0;
-    padding: 0;
+
+    
+    font-family: 'Arial';
+    
+
+    align-items: center;
+
+
+
 
 
     text-align: center;
 
-
-
-    min-height: 100vh;
-
-
-}
-
-
-
-header, footer {
-    background-color: #025959;
-    color: #03A696;
-
+    background-color: #f9fafb;
 
 
 }
-
 
 
 header {
     display: flex;
     flex-direction: column;
 
-    padding: 1%;
 
-    align-items: center;
+    text-align: left;
 
+    width: 770px;
 
+    
+    padding: 30px;
 
-}
-
-
-.navigation {
-    display: flex;
-    gap: 10%;
-    padding: 1%;
-
-    text-align: center;
-    justify-content: center;
-}   
-
-
-
-a {
-    text-decoration: none;
-    color: #03A696;
-
-    white-space: nowrap;
-
+    padding-left: 50px;
 
 }
-
-
 
 
 main {
     display: flex;
     flex-direction: column;
+    width: 770px;
 
-    align-items: center;
-    justify-content: center;
-
-
-
-    padding: 18%;
-    padding-top: 1%;
-    padding-bottom: 8%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #f9fafb;
 
 
-    
-
-    font-size: 75%;
-
-    
 
 
-    
+
+
 }
 
-
-img {
-    width: 50%;
-    border-radius: 15px;
-}
 
 
 .block {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+
+
+    height: 30px;
+    
+
+
+    padding: 40px;
+    padding-left: 20px;
+
+
+    gap: 2%;
+
+
+    border-radius: 10px;
 
 
 
 }
 
 
-.block-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.text {
+    text-align: left;
+
+}
 
 
+.section-title, .section-p{
+    padding: 0%;
+    margin: 0%;
     
 }
 
 
-.block-grid-lite {
+
+
+.section-p {
+    font-size: 85%;
+    color: #787f8b;
+    white-space: nowrap;
+}
+
+
+
+.link-a {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
     
-    padding: 7%;
-    margin: 10%;
-    border: 1px solid #03A696;
-    border-radius: 15px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2); /* Тень элемента */
-
-    gap: 12%;
-
+    margin-left: auto; /* прижимает к концу */
 
 }
 
 
 
-
-.block-grid-lite h2 {
-    margin-top: 15%;
+.icon-a {
+    width: 20px;
+    height: 20px;
+    padding: 15%;
 }
 
 
 
-#go {
-    filter: grayscale(10) blur(1px);
+
+
+.sector {
+  border: none; /* убираем дефолтную рамку */
+  border-top: 2px solid #f3f3f3; /* верхняя граница с цветом */
+  margin: 10px 0;
 }
 
 
-
-#btnchick {
-    padding: 5%;
-    background-color: #025959;
-    border-radius: 15px;
-
-    width: 20%;
-    margin-top: 5%;
-
+img {
+    width: 50px;
+    height: 50px;
 }
+
 
 footer {
-    margin-top: auto;
-
-
+    display: none;
 }
 
 
-@media only screen and (max-width: 600px) {
-    main {
+@media (min-width: 1200px) {
+    main, header, footer {
+        max-width: 1100px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    header, main {
+        display: flex;
+        width: 80%;
+
+
+
+        margin-top: auto;
+        padding: 3%;
+
+
+    }
+
+
+
+    header {
+        text-align: center;
+    }
+
+
+    .block {
+        display: flex;
+        height: 100%;
+        width: 80%;
+
+        padding-left: 0%;
+    
+        padding: 5%;
+
+        align-items: center;
+
+        gap: 10%;
+    }
+
+
+    .section-title {
+        font-size: 120%;
+    }
+
+
+    .section-p {
+        font-size: 90%;
+        white-space: normal;
+
+        
+    }
+
+    .link-a {
+        display: none;
+    }
+
+
+    footer {
+        display: block;
         padding: 5%;
     }
-
-
-    .block-grid {
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .block-grid-lite {
-        margin: 2%;
-        padding: 6%;
-    
-
-    }
-
     
 }
-
-
-main h1 {
-  animation: fadeIn 2s;
-}
-
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-
-
-
-
-
-
-
-

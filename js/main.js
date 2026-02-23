@@ -1,29 +1,41 @@
 let hidden_button = document.getElementById('Logo')
 let audio = document.querySelector('audio');
 
-let pycharm = document.getElementById('pycharm')
-let second_audio = document.getElementById('pay')
 
-let go = document.getElementById('go')
+let ubuntu = document.getElementById('ubuntu')
 let firefox = document.getElementById('firefox')
+let vscodium = document.getElementById('vscodium')
+let office = document.getElementById('libreoffice')
+let vlc = document.getElementById('vlc')
+
+
 
 hidden_button.addEventListener('click', function() {
     audio.play();
 
 })
 
-pycharm.addEventListener('click', function() {
-    second_audio.play();
-    
-})
 
-
-go.addEventListener('click', function() {
-    window.open('https://go.dev/', '_blank')
+ubuntu.addEventListener('click', function() {
+    window.open('https://ubuntu.com/download/desktop', '_blank')
 })
 
 
 firefox.addEventListener('click', function() {
-    window.open('https://firefox.com', '_blank')
+    window.open('https://www.firefox.com/en-US/', '_blank')
+})
 
+
+vscodium.addEventListener('click', function() {
+    window.open('https://vscodium.com/', '_blank')
+})
+
+
+office.addEventListener('click', function() {
+    window.open('https://www.libreoffice.org/', '_blank')
+})
+
+
+vlc.addEventListener('click', function() {
+    window.open('https://ru.wikipedia.org/wiki/VLC', '_blank')
 })
